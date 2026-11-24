@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Wanderly helps you discover tours, cooking classes, iconic places, and travel inspiration around the world." />
+  <title>Wanderly | Find Things To Do For Everything You're Into</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <!-- Skip link for keyboard users -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ==================== STICKY NAVBAR ==================== -->
+  <header class="site-header">
+    <div class="container nav-top">
+      <a href="index.html" class="logo" aria-label="Wanderly home">
+        <span class="logo-icon" aria-hidden="true">✈</span>
+        <span class="logo-text">Wanderly</span>
+      </a>
+
+      <form class="search-form" action="#" method="get" role="search">
+        <label for="site-search" class="visually-hidden">Search destinations, tours, and restaurants</label>
+        <span class="search-icon" aria-hidden="true">🔍</span>
+        <input type="search" id="site-search" name="q" placeholder="Search destinations, tours, food..." />
+        <button type="submit" class="search-btn">Search</button>
+      </form>
+
+      <nav class="nav-actions" aria-label="Account and settings">
+        <ul class="nav-actions-list">
+          <li><a href="#iconic-places" class="nav-link">Discover</a></li>
+          <li><a href="#inspiration" class="nav-link">Review</a></li>
+          <li>
+            <button type="button" class="currency-btn" aria-label="Change currency, currently Indian Rupee">
+              <span aria-hidden="true">🌐</span> INR
+            </button>
+          </li>
+          <li><a href="#" class="btn btn-signin">Sign in</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <nav class="sub-nav" aria-label="Categories">
+      <div class="container">
+        <ul class="sub-nav-list">
+          <li><a href="#must-dos" class="sub-nav-link is-active" aria-current="page">Things to Do</a></li>
+          <li><a href="#" class="sub-nav-link">Hotels</a></li>
+          <li><a href="#cooking" class="sub-nav-link">Restaurants</a></li>
+          <li><a href="#inspiration" class="sub-nav-link">Forums</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ==================== 1. HERO BANNER ==================== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <figure class="hero-media">
+          <img
+            src="images/1.jpg"
+            alt="Travelers standing on a ridge under a glowing night sky"
+            width="1000"
+            height="750"
+          />
+        </figure>
+
+        <div class="hero-content">
+          <p class="eyebrow">400,000+ experiences worldwide</p>
+          <h1 id="hero-title" class="hero-title">Find Things To Do For Everything You're Into</h1>
+          <p class="hero-text">From floating markets to cooking classes, browse handpicked experiences and book your next adventure in minutes.</p>
+          <div class="hero-actions">
+            <a href="#must-dos" class="btn btn-primary">Book Now</a>
+            <a href="#inspiration" class="btn btn-ghost">Get Inspired</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 2. MUST-DOS IN AMAZING PLACES ==================== -->
+    <section id="must-dos" class="section" aria-labelledby="must-dos-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="must-dos-title" class="section-title">Must-dos in Amazing Places</h2>
+          <p class="section-subtitle">Experiences we think you'll love</p>
+        </header>
+
+        <div class="card-grid card-grid--four">
+          <!-- Bangkok -->
+          <article class="card">
+            <div class="card-media">
+              <img src="images/2.jpg" alt="Boats filled with fresh produce at a Bangkok floating market" width="600" height="750" loading="lazy" />
+              <button type="button" class="heart-btn" aria-label="Save Bangkok floating market tour">♡</button>
+            </div>
+            <div class="card-body">
+              <p class="card-location">Bangkok</p>
+              <h3 class="card-title"><a href="#">Half-Day Floating Market and Railway Market Tour</a></h3>
+              <p class="rating">
+                <span class="rating-score">4.6</span>
+                <span class="stars" role="img" aria-label="4.6 out of 5 stars">★★★★★</span>
+                <span class="rating-count">(2,758)</span>
+              </p>
+              <p class="price">from <strong>₹2,850</strong> per adult</p>
+            </div>
+          </article>
+
+          <!-- Panjim -->
+          <article class="card">
+            <div class="card-media">
+              <img src="images/3.jpg" alt="Colorful heritage houses in the Latin Quarter of Panjim" width="600" height="750" loading="lazy" />
+              <button type="button" class="heart-btn" aria-label="Save Fontainhas heritage walk">♡</button>
+            </div>
+            <div class="card-body">
+              <p class="card-location">Panjim</p>
+              <h3 class="card-title"><a href="#">Fontainhas Heritage Walk Through the Latin Quarter</a></h3>
+              <p class="rating">
+                <span class="rating-score">4.9</span>
+                <span class="stars" role="img" aria-label="4.9 out of 5 stars">★★★★★</span>
+                <span class="rating-count">(2,956)</span>
+              </p>
+              <p class="price">from <strong>₹1,400</strong> per adult</p>
+            </div>
+          </article>
+
+          <!-- Hanoi -->
+          <article class="card">
+            <div class="card-media">
+              <img src="images/4.jpg" alt="Limestone mountains rising above a river in Ninh Binh" width="600" height="750" loading="lazy" />
+              <span class="badge">🏆 Top Pick 2026</span>
+              <button type="button" class="heart-btn" aria-label="Save Ninh Binh day tour">♡</button>
+            </div>
+            <div class="card-body">
+              <p class="card-location">Hanoi</p>
+              <h3 class="card-title"><a href="#">Ninh Binh Day Tour with Boat Ride and Biking</a></h3>
+              <p class="rating">
+                <span class="rating-score">4.9</span>
+                <span class="stars" role="img" aria-label="4.9 out of 5 stars">★★★★★</span>
+                <span class="rating-count">(4,539)</span>
+              </p>
+              <p class="price">from <strong>₹3,157</strong> per adult</p>
+            </div>
+          </article>
+
+          <!-- Ho Chi Minh City -->
+          <article class="card">
+            <div class="card-media">
+              <img src="images/5.jpg" alt="Jungle path near the Cu Chi Tunnels outside Ho Chi Minh City" width="600" height="750" loading="lazy" />
+              <button type="button" class="heart-btn" aria-label="Save Cu Chi Tunnels and Mekong Delta tour">♡</button>
+            </div>
+            <div class="card-body">
+              <p class="card-location">Ho Chi Minh City</p>
+              <h3 class="card-title"><a href="#">Cu Chi Tunnels and Mekong Delta Full-Day Tour</a></h3>
+              <p class="rating">
+                <span class="rating-score">4.9</span>
+                <span class="stars" role="img" aria-label="4.9 out of 5 stars">★★★★★</span>
+                <span class="rating-count">(6,827)</span>
+              </p>
+              <p class="price">from <strong>₹4,176</strong> per adult</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. COOK AROUND THE WORLD ==================== -->
+    <section id="cooking" class="section section--tinted" aria-labelledby="cooking-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="cooking-title" class="section-title">Cook Around the World</h2>
+          <p class="section-subtitle">Take a class and whip up a next-level meal</p>
+        </header>
+
+        <div class="card-grid card-grid--four">
+          <!-- Chiang Mai -->
+          <article class="card">
+            <div class="card-media">
+              <img src="images/6.jpg" alt="Fresh vegetables laid out for a Thai cooking class" width="600" height="750" loading="lazy" />
+              <span class="badge">🏆 Top Pick 2026</span>
+              <button type="button" class="heart-btn" aria-label="Save Thai and Akha cooking class">♡</button>
+            </div>
+            <div class="card-body">
+              <p class="card-location">Chiang Mai</p>
+              <h3 class="card-title"><a href="#">Thai and Akha Cooking Class with Market Visit</a></h3>
+              <p class="rating">
+                <span class="rating-score">5.0</span>
+                <span class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</span>
+                <span class="rating-count">(4,478)</span>
+              </p>
+              <p class="price">from <strong>₹4,018</strong> per adult</p>
+            </div>
+          </article>
+
+          <!-- Rome -->
+          <article class="card">
+            <div class="card-media">
+              <img src="images/7.jpg" alt="Freshly rolled pasta dough at an Italian cooking class" width="600" height="750" loading="lazy" />
+              <button type="button" class="heart-btn" aria-label="Save pasta and tiramisu class">♡</button>
+            </div>
+            <div class="card-body">
+              <p class="card-location">Rome</p>
+              <h3 class="card-title"><a href="#">Make Fresh Pasta and Tiramisu with Wine Included</a></h3>
+              <p class="rating">
+                <span class="rating-score">4.9</span>
+                <span class="stars" role="img" aria-label="4.9 out of 5 stars">★★★★★</span>
+                <span class="rating-count">(2,448)</span>
+              </p>
+              <p class="price">from <strong>₹5,147</strong> per adult</p>
+            </div>
+          </article>
+
+          <!-- Paris -->
+          <article class="card">
+            <div class="card-media">
+              <img src="images/8.jpg" alt="Guests sharing a meal at a long wooden table in Paris" width="600" height="750" loading="lazy" />
+              <span class="badge">🏆 Top Pick 2026</span>
+              <button type="button" class="heart-btn" aria-label="Save Paris cooking class">♡</button>
+            </div>
+            <div class="card-body">
+              <p class="card-location">Paris</p>
+              <h3 class="card-title"><a href="#">French Cooking Class and Lunch with Market Visit</a></h3>
+              <p class="rating">
+                <span class="rating-score">5.0</span>
+                <span class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</span>
+                <span class="rating-count">(894)</span>
+              </p>
+              <p class="price">from <strong>₹20,901</strong> per adult</p>
+            </div>
+          </article>
+
+          <!-- Oaxaca -->
+          <article class="card">
+            <div class="card-media">
+              <img src="images/9.jpg" alt="A bowl of rich Oaxacan soup on a colorful tablecloth" width="600" height="750" loading="lazy" />
+              <button type="button" class="heart-btn" aria-label="Save Flavors of Oaxaca class">♡</button>
+            </div>
+            <div class="card-body">
+              <p class="card-location">Oaxaca</p>
+              <h3 class="card-title"><a href="#">Flavors of Oaxaca: Cooking Class and Local Market Tour</a></h3>
+              <p class="rating">
+                <span class="rating-score">4.7</span>
+                <span class="stars" role="img" aria-label="4.7 out of 5 stars">★★★★☆</span>
+                <span class="rating-count">(267)</span>
+              </p>
+              <p class="price">from <strong>₹7,176</strong> per adult</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. ICONIC PLACES YOU NEED TO SEE ==================== -->
+    <section id="iconic-places" class="section" aria-labelledby="iconic-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="iconic-title" class="section-title">Iconic Places You Need to See</h2>
+          <p class="section-subtitle">Bucket-list cities that never get old</p>
+        </header>
+
+        <div class="card-grid card-grid--four">
+          <article class="place-card">
+            <a href="#" class="place-link">
+              <img src="images/10.jpg" alt="Historic streets of Rome, Italy" width="600" height="800" loading="lazy" />
+              <div class="place-overlay">
+                <h3 class="place-name">Rome, Italy</h3>
+                <span class="place-cta">Explore →</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="place-card">
+            <a href="#" class="place-link">
+              <img src="images/11.jpg" alt="Paris cityscape with the Eiffel Tower" width="600" height="800" loading="lazy" />
+              <div class="place-overlay">
+                <h3 class="place-name">Paris, France</h3>
+                <span class="place-cta">Explore →</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="place-card">
+            <a href="#" class="place-link">
+              <img src="images/12.jpg" alt="Bright lights of Las Vegas, Nevada" width="600" height="800" loading="lazy" />
+              <div class="place-overlay">
+                <h3 class="place-name">Las Vegas, NV</h3>
+                <span class="place-cta">Explore →</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="place-card">
+            <a href="#" class="place-link">
+              <img src="images/13.jpg" alt="A bridge over the River Thames in London" width="600" height="800" loading="lazy" />
+              <div class="place-overlay">
+                <h3 class="place-name">London, UK</h3>
+                <span class="place-cta">Explore →</span>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 5. INSPIRATION TO GET YOU GOING ==================== -->
+    <section id="inspiration" class="section section--tinted" aria-labelledby="inspiration-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="inspiration-title" class="section-title">Inspiration to Get You Going</h2>
+          <p class="section-subtitle">Stories and guides to spark your next trip</p>
+        </header>
+
+        <div class="card-grid card-grid--three">
+          <article class="card article-card">
+            <div class="card-media">
+              <img src="images/14.jpg" alt="A turquoise geothermal pool surrounded by rocky hills" width="800" height="550" loading="lazy" />
+              <button type="button" class="heart-btn" aria-label="Save geothermal wonders article">♡</button>
+            </div>
+            <div class="card-body">
+              <p class="card-location">Nature</p>
+              <h3 class="card-title"><a href="#">8 geothermal wonders worth planning a trip around</a></h3>
+              <p class="article-excerpt">Soak in steaming lagoons, hike past bubbling mud pots, and see the earth's power up close.</p>
+              <a href="#" class="read-more">Read more <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="card article-card">
+            <div class="card-media">
+              <img src="images/15.jpg" alt="The Milky Way glowing above a quiet countryside" width="800" height="550" loading="lazy" />
+              <button type="button" class="heart-btn" aria-label="Save stargazing spots article">♡</button>
+            </div>
+            <div class="card-body">
+              <p class="card-location">Night Skies</p>
+              <h3 class="card-title"><a href="#">12 stargazing spots you can't miss</a></h3>
+              <p class="article-excerpt">Escape the city lights and find skies so clear you can trace the Milky Way with your finger.</p>
+              <a href="#" class="read-more">Read more <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="card article-card">
+            <div class="card-media">
+              <img src="images/16.jpg" alt="A manatee swimming through clear spring water" width="800" height="550" loading="lazy" />
+              <button type="button" class="heart-btn" aria-label="Save Orlando experiences article">♡</button>
+            </div>
+            <div class="card-body">
+              <p class="card-location">Orlando</p>
+              <h3 class="card-title"><a href="#">10 one-of-a-kind experiences in Orlando</a></h3>
+              <p class="article-excerpt">Go beyond the theme parks with spring swims, airboat rides, and hidden local favorites.</p>
+              <a href="#" class="read-more">Read more <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 6. TRAVELLERS' CHOICE AWARDS BANNER ==================== -->
+    <section id="awards" class="awards" aria-labelledby="awards-title">
+      <div class="container awards-inner">
+        <div class="awards-content">
+          <div class="awards-badge" aria-hidden="true">
+            <span class="awards-badge-icon">🏆</span>
+            <span class="awards-badge-year">2026</span>
+          </div>
+          <h2 id="awards-title" class="awards-title">Travellers' Choice Awards: Best of the Best</h2>
+          <p class="awards-text">Meet the top 1% of places, stays, eats, and experiences, all chosen by travelers like you.</p>
+          <a href="#" class="btn btn-accent">See the Winners</a>
+        </div>
+
+        <figure class="awards-media">
+          <img src="images/17.jpg" alt="Happy travelers on a guided city tour" width="900" height="650" loading="lazy" />
+          <span class="awards-seal" aria-hidden="true">2026</span>
+        </figure>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== 7. FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section class="footer-brand" aria-labelledby="footer-about">
+        <a href="index.html" class="logo logo--light" aria-label="Wanderly home">
+          <span class="logo-icon" aria-hidden="true">✈</span>
+          <span class="logo-text">Wanderly</span>
+        </a>
+        <p id="footer-about" class="footer-text">Discover tours, food, and places you'll talk about for years. Plan smarter and travel happier.</p>
+        <ul class="social-list" aria-label="Social media">
+          <li><a href="#" class="social-link" aria-label="Instagram">IG</a></li>
+          <li><a href="#" class="social-link" aria-label="Facebook">FB</a></li>
+          <li><a href="#" class="social-link" aria-label="X">X</a></li>
+          <li><a href="#" class="social-link" aria-label="YouTube">YT</a></li>
+        </ul>
+      </section>
+
+      <nav class="footer-col" aria-labelledby="footer-explore">
+        <h2 id="footer-explore" class="footer-heading">Explore</h2>
+        <ul class="footer-links">
+          <li><a href="#must-dos">Things to Do</a></li>
+          <li><a href="#">Hotels</a></li>
+          <li><a href="#cooking">Restaurants</a></li>
+          <li><a href="#iconic-places">Destinations</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-col" aria-labelledby="footer-company">
+        <h2 id="footer-company" class="footer-heading">Company</h2>
+        <ul class="footer-links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <section class="footer-col" aria-labelledby="footer-newsletter">
+        <h2 id="footer-newsletter" class="footer-heading">Get Travel Deals</h2>
+        <p class="footer-text">Fresh ideas and exclusive offers, straight to your inbox.</p>
+        <form class="newsletter-form" action="#" method="post">
+          <label for="newsletter-email" class="visually-hidden">Email address</label>
+          <input type="email" id="newsletter-email" name="email" placeholder="Your email" required />
+          <button type="submit" class="btn btn-accent">Subscribe</button>
+        </form>
+      </section>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 Wanderly. All rights reserved.</p>
+        <ul class="footer-legal">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Cookies</a></li>
+        </ul>
+        <p class="footer-credit">Images courtesy of Picsum Photos (free to use).</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
